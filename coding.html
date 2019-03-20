@@ -1,0 +1,23 @@
+citra = imread ('D;// CITRA/dedaunan.png');
+imshow(citra);
+
+
+citra = imread ('D:/CITRA/dedaunan.png');
+citra_gray=(citra(:,:,1)+citra(:,:,2)+citra(:,:,3))/3;
+imshow(citra_gray);
+subplot(2,2,1);
+imshow(citra);
+title ('citra_RGB');
+
+
+subplot(2,2,2);
+imshow(citra_gray);
+title('citra_gray');
+
+
+I=imread();
+canny=edge(I,'canny');
+sobel=edge(I,'sobel');
+robert=edge(I,robert');
+prewiet=edge(I,'preweit');
+imshow(canny);
